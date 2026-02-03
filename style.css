@@ -104,3 +104,26 @@ footer {
     background-color: #cc0000;
     transform: scale(1.05); /* Knappen blir lite större vid hovring */
 }
+
+
+.cta-container {
+    display: flex;
+    justify-content: center; /* Centrerar gruppen på sidan */
+    align-items: center;    /* Centrerar dem vertikalt mot varandra */
+    gap: 20px;              /* Skapar ett mellanrum mellan knappen och bilden */
+    padding: 40px 0;
+}
+
+.side-image {
+    width: 80px;            /* Justera storleken på fotbollen här */
+    height: auto;
+    border-radius: 50%;     /* Gör bilden rund om den inte redan är det */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Gör det snyggt på mobilen så de hamnar under varandra istället */
+@media (max-width: 600px) {
+    .cta-container {
+        flex-direction: column;
+    }
+}
