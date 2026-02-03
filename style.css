@@ -80,3 +80,27 @@ footer {
         margin: 20px;
     }
 }
+
+
+.cta-container {
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center;    /* Centrerar vertikalt */
+    padding: 40px 0;
+}
+
+.youtube-button {
+    background-color: #FF0000; /* YouTube-röd */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; /* Rundade hörn */
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.youtube-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05); /* Knappen blir lite större vid hovring */
+}
