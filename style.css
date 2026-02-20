@@ -125,5 +125,12 @@ footer {
 @media (max-width: 600px) {
     .cta-container {
         flex-direction: column;
+.banner-img {
+    width: 100%;       /* Gör att bilden täcker hela bredden */
+    height: auto;      /* Behåller proportionerna */
+    max-height: 300px; /* Begränsar höjden så den inte tar upp för mycket plats */
+    object-fit: cover; /* Ser till att bilden fyller utrymmet snyggt även om den beskärs */
+    display: block;
+}
     }
 }
